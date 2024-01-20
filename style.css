@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.mainDiv {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* To-do container styles */
+#todo-container {
+    width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 30px 30px 10px rgba(20, 20, 0, 0.20);
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+/* Hover effect for to-do container */
+#todo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+/* Add button styles */
+.addBtn {
+    margin-top: 10px;
+    background-color: #007bffe5;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: #0b63d5;
+}
+
+/* Delete button styles */
+.btn-danger, .clearbtn {
+    margin-top: 10px;
+    background-color: #f4511e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-danger:hover, .clearbtn:hover {
+    background-color: #b03c07;
+}
+
+
+/* Input field styles */
+    input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; 
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+/* Styling for the to-do list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling for each to-do item */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid gray;
+}
+
+/* Completed to-do item styles */
+li.completed {
+    background-color: #e3f0f1;
+    color: #7f8c8d;
+}
+
+/* Styling for task count */
+#task-count {
+    margin-top: 15px;
+    color: #7f8c8d;
+}
